@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="cards">
+    <div class="front-card">
+      <img id="logo-card" src="images/card-logo.svg" alt="Card logo">
+      <div>
+        <h1 id="number-card">0000 0000 0000 0000</h1>
+        <div>
+          <p id="name-card">Jane Appleseed</p>
+          <p><span id="MM">00</span>/<span id="YY">00</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-card">
+      <span id="code-card">000</span>
+    </div>
+  </section>
+
+  <section id="section-form">
+    <div class="form">
+      <h2>Cardholder Name</h2>
+      <input minlength="3" maxlength="39" id="set-name-card" type="text" placeholder="Jane Appleseed">
+      <p id="alert-set-name-card" class="alert"></p>
+      <h2>Card Number</h2>
+      <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" id="set-number-card" maxlength="16" placeholder="1234 5678 9123 0000">
+      <p id="alert-set-number-card"  class="alert"></p>
+      <div class="data-back-card">
+        <div>
+          <h3>Exp. Date (MM/YY)</h3>
+          <div>
+            <input maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" id="set-MM" placeholder="MM">
+            <input maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" id="set-YY" placeholder="YY">
+          </div>
+        </div>
+        <div>
+          <h3>CVC</h3>
+          <input maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" id="set-code-card" placeholder="123">
+        </div>
+      </div>
+      <div id="div-button"><button onclick="Confirm()">Confirm</button></div>
+    </div>
+  </section>
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#cards {
+    background-image: url(../images/bg-main-desktop.png);
+    height: 100vh;
+    width: 30%;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.front-card {
+    background-image: url(../images/bg-card-front.png);
+    background-size: 100%;
+    width: 320px;
+    height: 170px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 42%;
+    top: 20%;
+}
+
+#logo-card {
+    width: 60px;
+    position: absolute;
+    top: 10%;
+}
+
+.front-card h1 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.front-card p {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.front-card > div > div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.front-card > div > div p:nth-child(2) {
+     position: absolute;
+     right: 20px;
+}
+
+.back-card {
+    background-image: url(../images/bg-card-back.png);
+    background-size: 100%;
+    border-radius: 10px;
+    width: 320px;
+    height: 170px;
+    color: black;
+    position: absolute;
+    top: 46%;
+    left: 64%;
+}
+
+.back-card span {
+    position: absolute;
+    right: 40px;
+    font-size: 14px;
+    top: 46%;
+}
+
+#section-form {
+    background-color: #a1a1b3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #bfbfcc;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #616164;
+    color: gray;
+    width: 40%;
+    box-shadow: 3px 3px 4px #00000071;
+    line-height: 40px;
+}
+
+.form input {
+    width: 100%;
+    padding: 7px 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #6662628f;
+}
+
+.data-back-card {
+    display: flex;
+    gap: 10px;
+}
+
+.data-back-card h3 {
+    font-size: 16px;
+}
+
+.data-back-card div {
+    width: 50%;
+}
+
+.data-back-card div:nth-child(1) div {
+    display: flex;
+    width: 100%;
+}
+
+#div-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form button {
+    width: 95%;
+    background-color: #4b094b;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    text-shadow: 2px 2px 3px #0000008c;
+    font-size: 16px;
+}
+
+.alert {
+    color: #df3333;
+}
